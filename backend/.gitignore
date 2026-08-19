@@ -1,0 +1,15 @@
+node_modules
+.env
+.env.*
+!.env.example
+
+# Banco de dados local (contém dados reais de usuários)
+*.sqlite
+*.sqlite-journal
+
+# Uploads de usuários — não devem ir pro controle de versão
+/storage/
+
+*.log
+npm-debug.log*
+.DS_Store

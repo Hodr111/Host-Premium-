@@ -1,0 +1,13 @@
+backend/.env
+backend/node_modules/
+frontend/node_modules/
+frontend/dist/
+*.backup
+*.bak
+*.sqlite-wal
+*.sqlite-shm
+database/*.sqlite
+frontend/src/*.backup*
+frontend/src/*.before-red*
+frontend/src/assets/.trashed-*
+frontend/public/.trashed-*
