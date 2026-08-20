@@ -38,7 +38,7 @@ import"./modulepreload-polyfill-P2Xu9kJm.js";var e=`http://127.0.0.1:3000`,t=doc
       <button id="open-admin" type="button">
         Acessar painel ADM
       </button>
-    `,document.body.appendChild(t),document.querySelector(`#open-admin`).onclick=()=>{window.location.href=`/admin.html`}}}async function u(t){t.preventDefault();let n=document.querySelector(`#email`).value.trim().toLowerCase(),r=document.querySelector(`#password`).value,i=document.querySelector(`#error`),a=t.submitter;a.disabled=!0,a.textContent=`Entrando...`,i.textContent=``;try{let t=await fetch(`${e}/api/auth/login`,{method:`POST`,headers:{"Content-Type":`application/json`},body:JSON.stringify({email:n,password:r})}),i=await t.json();if(!t.ok)throw Error(i.error||`Não foi possível entrar`);s(i)}catch(e){i.textContent=e.message,a.disabled=!1,a.textContent=`Entrar`}}function d(){t.innerHTML=`
+    `,document.body.appendChild(t),document.querySelector(`#open-admin`).onclick=()=>{window.location.href=`./admin.html`}}}async function u(t){t.preventDefault();let n=document.querySelector(`#email`).value.trim().toLowerCase(),r=document.querySelector(`#password`).value,i=document.querySelector(`#error`),a=t.submitter;a.disabled=!0,a.textContent=`Entrando...`,i.textContent=``;try{let t=await fetch(`${e}/api/auth/login`,{method:`POST`,headers:{"Content-Type":`application/json`},body:JSON.stringify({email:n,password:r})}),i=await t.json();if(!t.ok)throw Error(i.error||`Não foi possível entrar`);s(i)}catch(e){i.textContent=e.message,a.disabled=!1,a.textContent=`Entrar`}}function d(){t.innerHTML=`
     <div class="login">
       <div class="login-card">
         <div class="brand">HOST<span>BYGDEALL</span></div>
